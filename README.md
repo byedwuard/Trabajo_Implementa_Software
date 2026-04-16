@@ -1,2 +1,4 @@
 # Trabajo_Implementa_Software
 Trabajo encargado por el Profe Jairo Eliel, parte de la Segunda Unidad, de la materia de Implementación de Software
+En este repositorio, los equipos subiran su respectivo trabajo con el nombre de los todos los integrantes de cada equipo
+Mas les vale saber en que equipo van
