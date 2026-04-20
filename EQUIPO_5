@@ -1,1 +1,45 @@
+#include <iostream>
+#include <fstream>
+#include <ctime>
 
+using namespace std;
+
+// funcion para obtener fecha y hora actual
+string obtenerMarcaDeTiempo () {
+    time_t ahora = time(0);
+    char buffer[80];
+    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", localtime(&ahora));
+    return string(buffer);
+}
+
+int main() 
+{
+    int area,base,altura;
+    cout << "dame tu base";
+    cin >> base ;
+    cout << "dame tu altura";
+    cin >> altura;
+    area = base * altura;
+    cout << "tu area es de " << area;
+    
+
+
+    // Registrar en log
+    ofstream archivoLog("resta_log.txt", ios::app);
+
+    if (archivoLog.is_open()) 
+	{
+        archivoLog << "[" << obtenerMarcaDeTiempo() << "] "
+                   << "El resultado de la operacion: "
+                   << base * altura
+                   << " = " << area << endl;
+
+        archivoLog.close();
+        cout << "Operacion registrada en 'area_log.txt'" << endl;
+    } 
+	else {
+        cerr << "Error: No se pudo abrir el archivo de log." << endl;
+    }
+
+    return 0;
+}
