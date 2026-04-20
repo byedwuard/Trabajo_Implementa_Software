@@ -1,1 +1,12 @@
+Algoritmo multti_de_tres_num
+	Definir num1, num2, num3, mult Como Entero
+	Escribir 'ingresa el num1'
+	Leer num1
+	Escribir 'ingresa el num2'
+	Leer num2
+	Escribir 'ingresa el num3'
+	Leer num3
+	mult <- num1*num2*num3
+	Escribir 'La mult es:', mult
+FinAlgoritmo
 
