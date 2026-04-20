@@ -1,1 +1,12 @@
+Algoritmo resta_3
+	Definir r, n1, n2, n3 Como Entero
+	Escribir 'dame un digito:'
+	Leer n1
+	Escribir 'dame un digito'
+	Leer n2
+	Escribir 'dame un digito:'
+	Leer n3
+	r <- n1-n2-n3
+	Escribir 'tu resultado es:', r
+FinAlgoritmo
 
