@@ -1,1 +1,10 @@
+Algoritmo RECTANGULO
+	definir area,base,altura como entero
+	escribir"teclea base"
+	Leer base;
+	escribir" teclea altura" 
+	leer altura;
+	area<-base*altura 
+	escribir "el area es:",area; 
+FinAlgoritmo
 
