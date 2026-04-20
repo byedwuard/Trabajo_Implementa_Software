@@ -1,1 +1,15 @@
-
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int num1,num2,num3,mult;
+	printf("tecela el num1:");
+	scanf("%d",&num1);
+	printf("tecela el num2:");
+	scanf("%d",&num2);
+	printf("tecela el num3:");
+	scanf("%d",&num3);
+	mult=num1*num2*num3;
+	printf("la multiplicacion es:%d",mult);
+	getch();
+}
